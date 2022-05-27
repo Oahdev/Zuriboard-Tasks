@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Design</title>
+</head>
+<style>
+	*{margin: 0;}
+	body{font-family: serif; margin-top: 18px;}
+	.container{
+		background: #ddd; width: 50%; 
+		margin: auto; text-align: center;
+	}
+	nav{background: black; color: white; padding: 7px 0px;}
+	.question{padding: 27px;}
+	h2{margin-bottom: 18px;}
+	ul{width: fit-content; text-align: start; margin: auto;}
+	li{margin-bottom: 18px; list-style: none;}
+	input{margin-right: 4px;}
+	button{
+		cursor: pointer; background: blue; border: none;
+		border-radius: 6px; color: white; padding: 18px;
+		margin-right: 9px;
+	}
+	button:hover{background: lightblue;}
+</style>
+<body>
+	<div class="container">
+		<nav>
+			<h3>Quiz on Important Facts</h3>
+		</nav>
+		<div class="question">
+			<h2><p>Which one of these is a JavaScript package manager?</p></h2>
+			<ul>
+				<li><input type="radio" name="option"><label>a : Node.js</label></li>
+				<li><input type="radio" name="option"><label>b : TypeScript</label></li>
+				<li><input type="radio" name="option"><label>c : npm</label></li>
+			</ul>
+			<button>Previous Question</button>
+			<button>Next Question</button>
+		</div>
+	</div>
+
+</body>
+</html>
