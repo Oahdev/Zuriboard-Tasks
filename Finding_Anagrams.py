@@ -22,7 +22,3 @@ def find_anagrams(word, anagram):
                 result = True
 
     return result
-
-find_anagrams("Below", "Elbow")
-
-
