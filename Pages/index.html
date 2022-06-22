@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style/home.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header>
+                <nav>
+                    <div class="navbar">
+                        <!-- Page Logo -->
+                        <div id="logo">
+                            <a href="index.html"><h1><span>Olamide Sodeinde</span></h1></a>
+                        </div>
+                        <div  class="nav-features">
+                            <!-- Mobile Menu -->
+                            <div onclick="openNav()" class="menuBtn">
+                                <div id="line"></div>
+                                <div id="line"></div>
+                                <div id="line"></div>
+                            </div>
+                            <!-- Mobile SideNav -->
+                            <div id="mySidenav" class="sidenav">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <a href="#"style="text-decoration: none; color: var(--active-color);">Home</a>
+                                <a href="./contact.html">Contact</a> 
+                                <a href="./login.html">Login</a>
+                                <a href="./register.html">Register</a>  
+                            </div>
+                            <!-- Desktop Nav -->
+                            <ul class="nav-features-item">
+                                <li><a style="text-decoration: none; color: var(--active-color);" href="./index.html">Home</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                                <!-- Account option -->
+                                <div class="dropdown">
+                                    <li class="navAccount"><img src="./image/profile icon.png" alt="Account" ></li>
+                                    <div id="navAccountDrop" class="navAccountContent">
+                                        <a href="./login.html">Login</a>
+                                        <a href="./register.html">Register</a>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <div class="main-container">
+                    <ul class="section">
+                        <li id="bio">
+                            <img src="https://avatars.githubusercontent.com/u/90583135?v=4" alt="me!">
+                            <p>I'm a solution-driven, self-taught Backend Developer adept at contributing to highly collaborative work environment, finding solutions and determining customer satisfaction. I've experience developing consumer-focused websites using HTML, CSS, JavaScript, PHP and MySQL. I've built products for desktop and mobile app users, meeting highest standards for web design, user experience, best practices and speed. Designed and developed web applications across multiple APIs, third-party integrations and databases. I'm an enthusiastic person eager to contribute to team success through hard work, attention to detail and excellent organizational skills. Clear understanding of Task and training in Skill. Motivated to learn, grow and excel in the tech world.</p>
+                        </li>
+                        <li id="skills">
+                            <h2>Skills</h2>
+                            <ol>
+                                <li>Programming: PHP, MySQL, HTML5, CSS3, JavaScript.</li>
+                                <li>Website optimization.</li>
+                                <li>Active Listening.</li>
+                                <li>Teamwork and Collaboration.</li>
+                                <li>Attention to Detail.</li>
+                            </ol>
+                        </li>
+                        <li id="priorities">
+                            <h2>Priorities</h2>
+                            <ol>
+                                <li>Learning more advanced programming technologies.</li>
+                                <li>Buildinng projects.</li>
+                                <li>Betterment of myself by learning from others.</li>
+                            </ol>
+                        </li>
+                        <li id="hobbies">
+                            <h2>Hobbies</h2>
+                            <ol>
+                                <li>Coding.</li>
+                                <li>Problem-Solving.</li>
+                                <li>Critical Thinking.</li>
+                                <li>Watching sports.</li>
+                                <li>Playing sports.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </main>
+            <footer>
+                <div class="footer-container">
+                    <ul>
+                        <a href="./contact.html"><button>Contact Me</button></a>   
+                        <div class="info">
+                            <p>Twitter: <a href="https://twitter.com/Oahdev">Oahdev</a></p>
+                            <p>Github: <a href="https://github.com/Oahdev">Oahdev</a></p>
+                        </div>                 
+                    </ul>
+                    <p id="footer-info">&copy; Olamide Sodeinde. 2022</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

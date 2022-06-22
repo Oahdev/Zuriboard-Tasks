@@ -1,0 +1,32 @@
+.form-container{
+    width: 45%;
+    margin: auto;
+    margin-top: 98px;
+    border-radius: 9px;
+    background-color: var(--front-color);
+    padding: 27px;
+    text-align: center;
+}
+.form-container input, textarea{
+    width: 80%;
+    padding: 9px;
+    margin-bottom: 18px;
+}
+button{
+    width: 50%;
+}
+footer{
+    margin-top: 360px;
+}
+footer .info{
+    min-width: 36%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+/* @media (max-width:768px) {
+    .form-container{
+        width: var(--blog-size);
+    }
+} */

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/contact.css">
+</head>
+<style>
+    label,select{
+        margin-bottom: 9px;
+        padding: 5px;
+    }
+</style>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="navbar">
+                    <!-- Page Logo -->
+                    <div id="logo">
+                        <a href="index.html"><h1><span>Olamide Sodeinde</span></h1></a>
+                    </div>
+                    <div  class="nav-features">
+                        <!-- Mobile Menu -->
+                        <div onclick="openNav()" class="menuBtn">
+                            <div id="line"></div>
+                            <div id="line"></div>
+                            <div id="line"></div>
+                        </div>
+                        <!-- Mobile SideNav -->
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="./index.html">Home</a>
+                            <a href="./contact.html">Contact</a> 
+                            <a href="./login.html">Login</a>
+                            <a href="./register.html">Register</a>  
+                        </div>
+                        <!-- Desktop Nav -->
+                        <ul class="nav-features-item">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <!-- Account option -->
+                            <div class="dropdown">
+                                <li class="navAccount"><img src="./image/profile icon.png" alt="Account" ></li>
+                                <div id="navAccountDrop" class="navAccountContent">
+                                    <a href="./login.html">Login</a>
+                                    <a href="./register.html">Register</a>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="form-container">
+            <form>
+                <input type="text" id="firstname" placeholder="Firstname">
+                <input type="text" id="lastname" placeholder="Lastname">
+                <input type="number" id="phone" placeholder="Phone"><br>
+                <label for="gender">Gender:</label>
+                <select id="gender">
+                    <option value="">--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select><br>
+                <input type="text" id="country" placeholder="Country">
+                <input type="text" id="state" placeholder="State/Province">
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password">
+                <input type="password" id="confirm-password" placeholder="Confirm Password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <ul>
+                    <div class="info">
+                        <p>Twitter: <a href="https://twitter.com/Oahdev">Oahdev</a></p>
+                        <p>Github: <a href="https://github.com/Oahdev">Oahdev</a></p>
+                    </div>                 
+                </ul>
+                <p id="footer-info">&copy; Olamide Sodeinde. 2022</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
